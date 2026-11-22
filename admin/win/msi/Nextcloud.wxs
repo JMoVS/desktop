@@ -33,7 +33,7 @@
         https://www.firegiant.com/wix/tutorial/upgrades-and-modularization/replacing-ourselves/
         https://www.joyofsetup.com/2010/01/16/major-upgrades-now-easier-than-ever/
     -->
-    <MajorUpgrade Schedule="afterInstallExecute" AllowDowngrades="yes" />
+    <MajorUpgrade Schedule="afterInstallInitialize" AllowDowngrades="yes" />
 
     <!-- Replace a legacy MSI product that has a different UpgradeCode -->
     <?if $(var.LegacyUpgradeCode) != "" ?>
